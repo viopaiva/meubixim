@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="profile-body">
+    <div class="profile-shell">
+      <header class="topbar">
+        <div class="brand-mini">
+          <img class="brand-logo" src="imagemmeubixim.jpeg" alt="Meu Bixim" />
+        </div>
+        <nav class="nav-links">
+          <a class="active" href="profile.html">Início</a>
+          <a href="discover.html">Serviços</a>
+          <a href="#">Mensagens</a>
+          <a href="#">Notificações</a>
+        </nav>
+        <div class="user-actions">
+          <button class="icon-button" type="button">🔔</button>
+          <button class="icon-button" type="button">✉️</button>
+
+          <div class="profile-menu-wrapper">
+            <button class="mini-user profile-trigger" type="button" aria-expanded="false">
+              <span class="mini-avatar">🐶</span>
+              <span>Billy</span>
+              <span class="caret">▾</span>
+            </button>
+
+            <div class="profile-dropdown">
+              <button type="button">🔄 Trocar de perfil</button>
+              <button type="button">⚙️ Configurações</button>
+              <button type="button" class="logout-option">↩️ Logout</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="profile-main">
+        <aside class="sidebar left-panel">
+          <div class="profile-card">
+            <div class="cover-gradient"></div>
+            <div class="profile-head">
+              <div class="profile-avatar">🐕</div>
+              <div>
+                <h2>Billy</h2>
+                <p>@BillyIdol</p>
+                <p>SRD, 2 anos</p>
+              </div>
+            </div>
+
+            <p class="profile-bio">
+              Amante de brincadeiras, passeios no parque e muito carinho. 🐾
+            </p>
+
+            <div class="stats-row">
+              <div>
+                <strong>1.2k</strong>
+                <span>seguidores</span>
+              </div>
+              <div>
+                <strong>540</strong>
+                <span>seguindo</span>
+              </div>
+              <div>
+                <strong>198</strong>
+                <span>posts</span>
+              </div>
+            </div>
+
+            <a href="editar-perfil.html" class="primary-btn small-btn">Editar perfil</a>
+            <a href="community.html" class="community-btn">Comunidades</a>
+            <a href="saude.html" class="community-btn secondary-community-btn">Carteira Digital de Saúde</a>
+
+            <div class="panel-card">
+            <h3>Amigos pets</h3>
+            <div class="friend-list">
+              <div class="friend-item"><span>🐶</span> Rex</div>
+              <div class="friend-item"><span>🐱</span> Nina</div>
+              <div class="friend-item"><span>🐾</span> Theo</div>
+              <div class="friend-item"><span>🐕</span> Bibi</div>
+            </div>
+          </div>
+        </aside>
+
+        <section class="feed center-panel">
+          <div class="composer panel-card">
+            <div class="composer-header">
+              <span class="mini-avatar small">🐶</span>
+              <input type="text" value="O que o seu pet está fazendo hoje?" aria-label="Nova publicação" />
+            </div>
+            <div class="composer-actions">
+              <button type="button">📷 Foto</button>
+              <button type="button">🎥 Vídeo</button>
+              <button type="button" class="publish-btn">Publicar</button>
+            </div>
+          </div>
+
+          <div class="story-strip panel-card">
+            <div class="story-item active"><span>🐶</span><small>Meu dia</small></div>
+            <div class="story-item"><span>🐱</span><small>Nina</small></div>
+            <div class="story-item"><span>🐕</span><small>Rex</small></div>
+            <div class="story-item"><span>🐾</span><small>Banho</small></div>
+            <div class="story-item"><span>🦴</span><small>Brincar</small></div>
+          </div>
+
+          <article class="post-card panel-card">
+            <div class="post-header">
+              <div class="user-meta">
+                <div class="mini-avatar">🐶</div>
+                <div>
+                  <strong>Billy</strong>
+                  <small>há 2 horas</small>
+                </div>
+              </div>
+              <button class="dots-btn" type="button">⋯</button>
+            </div>
+
+            <p>Hoje foi dia de passeio no parque. O melhor da rotina é compartilhar cada momento com meus amigos peludos.</p>
+
+            <div class="post-image image-walk"></div>
+
+            <div class="post-actions">
+              <button type="button">❤ 482</button>
+              <button type="button">💬 39</button>
+              <button type="button">↻ Compartilhar</button>
+            </div>
+          </article>
+
+          <article class="post-card panel-card">
+            <div class="post-header">
+              <div class="user-meta">
+                <div class="mini-avatar bg-alt">🐱</div>
+                <div>
+                  <strong>Nina</strong>
+                  <small>há 5 horas</small>
+                </div>
+              </div>
+              <button class="dots-btn" type="button">⋯</button>
+            </div>
+
+            <p>Nova dica de conforto para o dia quente: água fresca, sombra e muito carinho. 🐾</p>
+
+            <div class="post-image image-cat"></div>
+
+            <div class="post-actions">
+              <button type="button">❤ 631</button>
+              <button type="button">💬 52</button>
+              <button type="button">↻ Compartilhar</button>
+            </div>
+          </article>
+        </section>
+
+        <aside class="sidebar right-panel">
+          <div class="panel-card">
+            <h3>Atividades recentes</h3>
+            <ul class="activity-list">
+              <li><span>🐾</span> 12 curtidas na sua última foto</li>
+              <li><span>🧸</span> Rex comentou no seu post</li>
+              <li><span>📍</span> Nova trilha de pet-friendly</li>
+              <li><span>💬</span> 3 novas mensagens</li>
+            </ul>
+          </div>
+
+          <div class="panel-card trade-card">
+            <div class="trade-header">
+              <h3>Troca de brinquedos</h3>
+              <button type="button" class="trade-add-btn" data-open-trade-modal>+ Cadastrar</button>
+            </div>
+            <div class="trade-list" id="tradeList">
+              <div class="trade-item">
+                <span class="trade-icon">🦴</span>
+                <div>
+                  <strong>Bolinha de borracha</strong>
+                  <small>Excelente • Troca por petiscos ou brinquedo</small>
+                </div>
+              </div>
+              <div class="trade-item">
+                <span class="trade-icon">🧸</span>
+                <div>
+                  <strong>Pelúcia de ursinho</strong>
+                  <small>Boa • Pode ser trocada por coleira ou acessório</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <h3>Encontros</h3>
+            <div class="encounter-list">
+              <div class="encounter-item">
+                <span class="encounter-icon">📍</span>
+                <div>
+                  <strong>Meetup no Parque</strong>
+                  <small>Sábado, 09:00 • Jardim Botânico</small>
+                </div>
+              </div>
+              <div class="encounter-item">
+                <span class="encounter-icon">🐾</span>
+                <div>
+                  <strong>Pet Walk do Bairro</strong>
+                  <small>Domingo, 08:30 • Praça Central</small>
+                </div>
+              </div>
+              <div class="encounter-item">
+                <span class="encounter-icon">🎉</span>
+                <div>
+                  <strong>Festival dos Pets</strong>
+                  <small>Próximo domingo • Parque da Cidade</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <h3>Desafios</h3>
+            <div class="challenge-box">
+              <strong>7 dias de bem-estar</strong>
+              <small>Complete a rotina com banho, exercícios e hidratação.</small>
+              <button type="button">Participar</button>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <div class="modal-overlay" id="switchProfileModal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="switchProfileTitle">
+        <div class="modal-header">
+          <h3 id="switchProfileTitle">Trocar de perfil</h3>
+          <button class="close-modal" type="button" aria-label="Fechar">×</button>
+        </div>
+
+        <div class="profile-switch-list">
+          <button class="switch-profile-item active" type="button" data-profile="lua">
+            <span class="mini-avatar">🐶</span>
+            <span>
+              <strong>Billy</strong>
+              <small>@billyidol</small>
+            </span>
+          </button>
+          <button class="switch-profile-item" type="button" data-profile="rex">
+            <span class="mini-avatar bg-alt">🐕</span>
+            <span>
+              <strong>Rex</strong>
+              <small>@rexinho</small>
+            </span>
+          </button>
+          <button class="switch-profile-item" type="button" data-profile="nina">
+            <span class="mini-avatar" style="background: linear-gradient(135deg, #e8ebff, #d5e6ff);">🐱</span>
+            <span>
+              <strong>Nina</strong>
+              <small>@ninagatinha</small>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="settingsModal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+        <div class="modal-header">
+          <h3 id="settingsTitle">Configurações</h3>
+          <button class="close-modal" type="button" aria-label="Fechar">×</button>
+        </div>
+
+        <div class="settings-list">
+          <label class="setting-row">
+            <span>Notificações</span>
+            <input type="checkbox" checked />
+          </label>
+          <label class="setting-row">
+            <span>Privacidade</span>
+            <input type="checkbox" checked />
+          </label>
+          <label class="setting-row">
+            <span>Modo noturno</span>
+            <input type="checkbox" />
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay" id="toyTradeModal" aria-hidden="true">
+      <div class="modal-card trade-modal" role="dialog" aria-modal="true" aria-labelledby="toyTradeTitle">
+        <div class="modal-header">
+          <h3 id="toyTradeTitle">Cadastrar item para troca</h3>
+          <button class="close-modal" type="button" aria-label="Fechar">×</button>
+        </div>
+
+        <form id="toyTradeForm" class="trade-form">
+          <label>
+            Nome do item
+            <input type="text" name="toyName" placeholder="Ex.: brinquedo de corda" required />
+          </label>
+
+          <label>
+            Categoria
+            <select name="toyCategory">
+              <option value="Brinquedo">Brinquedo</option>
+              <option value="Acessório">Acessório</option>
+              <option value="Objeto">Objeto</option>
+              <option value="Petisco">Petisco</option>
+            </select>
+          </label>
+
+          <label>
+            Condição
+            <select name="toyCondition">
+              <option value="Excelente">Excelente</option>
+              <option value="Boa">Boa</option>
+              <option value="Usada">Usada</option>
+            </select>
+          </label>
+
+          <label>
+            Descrição
+            <textarea name="toyDescription" rows="3" placeholder="Descreva o item e o que você gostaria em troca" required></textarea>
+          </label>
+
+          <button type="submit" class="primary-btn">Salvar item</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

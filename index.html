@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Rede social para pets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="brand-panel">
+        <div class="brand-badge">
+          <img class="brand-logo brand-logo--large" src="imagemmeubixim.jpeg" alt="Meu Bixim" />
+        </div>
+
+        <div class="trust-row">
+          <div class="stat-pill">
+            <strong>120k+</strong>
+            <span>tutores ativos</span>
+          </div>
+          <div class="stat-pill">
+            <strong>24k</strong>
+            <span>postagens hoje</span>
+          </div>
+        </div>
+
+        <h1>Conecte-se com a comunidade mais amorosa dos pets.</h1>
+        <p>
+          Compartilhe fotos, descubra passeios, acompanhe os cuidados do seu amigo
+          e encontre outros tutores apaixonados por animais.
+        </p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="icon">📸</span>
+            <div>
+              <strong>Feed de pets</strong>
+              <small>Fotos e momentos engraçados</small>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="icon">🩺</span>
+            <div>
+              <strong>Cuidados</strong>
+              <small>Dicas de saúde e rotina</small>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="icon">🐶</span>
+            <div>
+              <strong>Comunidades</strong>
+              <small>Amigos peludos de todo lugar</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="pet-preview-card">
+          <div class="pet-avatar">🐕</div>
+          <div>
+            <strong>Rex &amp; Mel</strong>
+            <small>Amigos em uma caminhada matinal</small>
+          </div>
+          <span class="like-count">❤ 2.4k</span>
+        </div>
+      </div>
+
+      <div class="auth-panel">
+        <div class="auth-card">
+          <div class="tab-group" role="tablist" aria-label="Formas de autenticação">
+            <button class="tab-btn active" type="button" data-target="login" aria-selected="true">
+              Entrar
+            </button>
+            <button class="tab-btn" type="button" data-target="signup" aria-selected="false">
+              Criar conta
+            </button>
+          </div>
+
+          <form class="form-panel active" id="loginForm">
+            <div class="heading">
+              <span class="mini-tag">Bem-vindo de volta</span>
+              <h2>Login</h2>
+            </div>
+
+            <label>
+              <span>E-mail</span>
+              <input type="email" placeholder="seuemail@email.com" />
+            </label>
+
+            <label>
+              <span>Senha</span>
+              <input type="password" placeholder="••••••••" />
+            </label>
+
+            <div class="options-row">
+              <label class="checkbox-wrap">
+                <input type="checkbox" />
+                <span>Lembrar-me</span>
+              </label>
+              <a href="#">Esqueci a senha</a>
+            </div>
+
+            <button class="primary-btn" type="submit">Entrar</button>
+
+            <div class="divider"><span>ou continue com</span></div>
+
+            <div class="social-row">
+              <button type="button" class="social-btn">Google</button>
+              <button type="button" class="social-btn">Facebook</button>
+            </div>
+          </form>
+
+          <form class="form-panel" id="signupForm">
+            <div class="heading">
+              <span class="mini-tag">Junte-se à rede</span>
+              <h2>Criar nova conta</h2>
+            </div>
+
+            <div class="two-columns">
+              <label>
+                <span>Nome</span>
+                <input type="text" placeholder="Seu nome" />
+              </label>
+              <label>
+                <span>Pet</span>
+                <input type="text" placeholder="Nome do pet" />
+              </label>
+            </div>
+
+            <label>
+              <span>E-mail</span>
+              <input type="email" placeholder="seuemail@email.com" />
+            </label>
+
+            <div class="two-columns">
+              <label>
+                <span>Senha</span>
+                <input type="password" placeholder="Crie uma senha" />
+              </label>
+              <label>
+                <span>Tipo de pet</span>
+                <select>
+                  <option>Cachorro</option>
+                  <option>Gato</option>
+                  <option>Pássaro</option>
+                  <option>Outros</option>
+                </select>
+              </label>
+            </div>
+
+            <label class="checkbox-wrap signup-check">
+              <input type="checkbox" />
+              <span>Aceito os termos e políticas da plataforma</span>
+            </label>
+
+            <button class="primary-btn" type="submit">Criar minha conta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Comunidades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="community-body">
+    <div class="community-shell">
+      <header class="topbar">
+        <div class="brand-mini">
+          <img class="brand-logo" src="imagemmeubixim.jpeg" alt="Meu Bixim" />
+        </div>
+        <nav class="nav-links">
+          <a href="profile.html">Início</a>
+          <a href="discover.html">Serviços</a>
+          <a href="community.html" class="active">Comunidades</a>
+          <a href="#">Mensagens</a>
+          <a href="#">Notificações</a>
+        </nav>
+        <div class="user-actions">
+          <button class="icon-button" type="button">🔔</button>
+          <button class="icon-button" type="button">✉️</button>
+
+          <div class="profile-menu-wrapper">
+            <button class="mini-user profile-trigger" type="button" aria-expanded="false">
+              <span class="mini-avatar">🐶</span>
+              <span>Lua</span>
+              <span class="caret">▾</span>
+            </button>
+
+            <div class="profile-dropdown">
+              <button type="button">🔄 Trocar de perfil</button>
+              <button type="button">⚙️ Configurações</button>
+              <button type="button" class="logout-option">↩️ Logout</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="community-main">
+        <section class="community-hero panel-card">
+          <div>
+            <span class="mini-tag">Comunidades</span>
+            <h1>Adoção animal</h1>
+            <p>Encontre pets esperando por um lar, ajude campanhas de resgate e conecte-se com famílias acolhedoras.</p>
+          </div>
+          <button class="primary-btn" type="button">Quero ajudar</button>
+        </section>
+
+        <section class="community-grid">
+          <article class="adoption-card panel-card">
+            <div class="adoption-cover cover-one"></div>
+            <div class="adoption-content">
+              <div class="tag-row">
+                <span class="service-tag">Cachorro</span>
+                <span class="status-badge">Disponível</span>
+              </div>
+              <h3>Luna</h3>
+              <p>Filhote dócil, muito carinhosa e ótima com crianças. Pronta para uma família amorosa.</p>
+              <div class="adoption-meta">
+                <span>2 anos</span>
+                <span>Fêmea</span>
+              </div>
+              <button type="button">Quero adotar</button>
+            </div>
+          </article>
+
+          <article class="adoption-card panel-card">
+            <div class="adoption-cover cover-two"></div>
+            <div class="adoption-content">
+              <div class="tag-row">
+                <span class="service-tag">Gato</span>
+                <span class="status-badge">Disponível</span>
+              </div>
+              <h3>Milo</h3>
+              <p>Gatinho tranquilo, muito brincalhão e adaptação rápida em apartamentos.</p>
+              <div class="adoption-meta">
+                <span>1 ano</span>
+                <span>Macho</span>
+              </div>
+              <button type="button">Quero adotar</button>
+            </div>
+          </article>
+
+          <article class="adoption-card panel-card">
+            <div class="adoption-cover cover-three"></div>
+            <div class="adoption-content">
+              <div class="tag-row">
+                <span class="service-tag">Pássaro</span>
+                <span class="status-badge">Em tratamento</span>
+              </div>
+              <h3>Pippo</h3>
+              <p>Animal em recuperação, muito sociável e em processo de adaptação para adoção.</p>
+              <div class="adoption-meta">
+                <span>8 meses</span>
+                <span>Fêmea</span>
+              </div>
+              <button type="button">Apoiar</button>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

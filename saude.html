@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Carteira Digital de Saúde</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="community-body">
+    <div class="community-shell">
+      <header class="topbar">
+        <div class="brand-mini">
+          <img class="brand-logo" src="imagemmeubixim.jpeg" alt="Meu Bixim" />
+        </div>
+        <nav class="nav-links">
+          <a href="profile.html">Início</a>
+          <a href="discover.html">Serviços</a>
+          <a href="community.html" class="active">Comunidades</a>
+          <a href="#">Mensagens</a>
+          <a href="#">Notificações</a>
+        </nav>
+        <div class="user-actions">
+          <button class="icon-button" type="button">🔔</button>
+          <button class="icon-button" type="button">✉️</button>
+
+          <div class="profile-menu-wrapper">
+            <button class="mini-user profile-trigger" type="button" aria-expanded="false">
+              <span class="mini-avatar">🐶</span>
+              <span>Lua</span>
+              <span class="caret">▾</span>
+            </button>
+
+            <div class="profile-dropdown">
+              <button type="button">🔄 Trocar de perfil</button>
+              <button type="button">⚙️ Configurações</button>
+              <button type="button" class="logout-option">↩️ Logout</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="community-main">
+        <section class="community-hero panel-card health-hero">
+          <div>
+            <span class="mini-tag">Carteira Digital de Saúde</span>
+            <h1>Histórico do cuidado do seu pet</h1>
+            <p>Acompanhe vacinas, vermifugação e consultas em um só lugar para manter a rotina em dia.</p>
+          </div>
+          <button class="primary-btn" type="button">Adicionar registro</button>
+        </section>
+
+        <section class="health-grid">
+          <article class="health-card panel-card">
+            <div class="health-icon">💉</div>
+            <h3>Vacinas</h3>
+            <ul>
+              <li class="status-done"><span>✔</span> Vacina antirrábica — 12/03/2026</li>
+              <li class="status-done"><span>✔</span> V8/V10 — 28/06/2026</li>
+              <li class="status-pending"><span>⏳</span> Próxima dose prevista — 10/11/2026</li>
+            </ul>
+          </article>
+
+          <article class="health-card panel-card">
+            <div class="health-icon">🧴</div>
+            <h3>Vermifugação</h3>
+            <ul>
+              <li class="status-done"><span>✔</span> Vermífugo — 14/02/2026</li>
+              <li class="status-done"><span>✔</span> Vermífugo — 09/07/2026</li>
+              <li class="status-pending"><span>⏳</span> Próxima aplicação — 15/10/2026</li>
+            </ul>
+          </article>
+
+          <article class="health-card panel-card">
+            <div class="health-icon">🩺</div>
+            <h3>Consultas</h3>
+            <ul>
+              <li class="status-done"><span>✔</span> Exame anual — 12/08/2026</li>
+              <li class="status-done"><span>✔</span> Consulta de rotina — 03/05/2026</li>
+              <li class="status-pending"><span>⏳</span> Próxima consulta — 30/09/2026</li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

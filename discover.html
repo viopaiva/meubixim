@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Serviços</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="discover-body">
+    <div class="discover-shell">
+      <header class="topbar">
+        <div class="brand-mini">
+          <img class="brand-logo" src="imagemmeubixim.jpeg" alt="Meu Bixim" />
+        </div>
+        <nav class="nav-links">
+          <a href="profile.html">Início</a>
+          <a class="active" href="discover.html">Serviços</a>
+          <a href="#">Mensagens</a>
+          <a href="#">Notificações</a>
+        </nav>
+        <div class="user-actions">
+          <button class="icon-button" type="button">🔔</button>
+          <button class="icon-button" type="button">✉️</button>
+
+          <div class="profile-menu-wrapper">
+            <button class="mini-user profile-trigger" type="button" aria-expanded="false">
+              <span class="mini-avatar">🐶</span>
+              <span>Billy</span>
+              <span class="caret">▾</span>
+            </button>
+
+            <div class="profile-dropdown">
+              <button type="button">🔄 Trocar de perfil</button>
+              <button type="button">⚙️ Configurações</button>
+              <button type="button" class="logout-option">↩️ Logout</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="discover-main">
+        <section class="discover-header panel-card">
+          <div>
+            <span class="mini-tag">Serviços</span>
+            <h1>Serviços pet na sua cidade</h1>
+          </div>
+          <button class="primary-btn" type="button" onclick="window.location.href='agendar-servico.html'">Agendar serviço</button>
+        </section>
+
+        <section class="service-grid">
+          <article class="service-card panel-card">
+            <div class="service-icon">🏥</div>
+            <div class="service-content">
+              <span class="service-tag">Atendimento</span>
+              <h3>Veterinário a domicílio</h3>
+              <p>Consulta, acompanhamento e cuidados para pets em casa com profissionais qualificados.</p>
+            </div>
+            <div class="service-meta">
+              <span>⭐ 4.9</span>
+              <button type="button">Contratar</button>
+            </div>
+          </article>
+
+          <article class="service-card panel-card">
+            <div class="service-icon">🧑‍🦱</div>
+            <div class="service-content">
+              <span class="service-tag">Cuidados</span>
+              <h3>Pet sitter</h3>
+              <p>Quem cuida do seu pet em casa, com alimentação, carinho e companhia durante a ausência.</p>
+            </div>
+            <div class="service-meta">
+              <span>⭐ 4.8</span>
+              <button type="button">Reservar</button>
+            </div>
+          </article>
+
+          <article class="service-card panel-card">
+            <div class="service-icon">🐕</div>
+            <div class="service-content">
+              <span class="service-tag">Passeios</span>
+              <h3>Dogwalker</h3>
+              <p>Passeios seguros e divertidos para cães que precisam de exercício, socialização e atenção.</p>
+            </div>
+            <div class="service-meta">
+              <span>⭐ 5.0</span>
+              <button type="button">Agendar</button>
+            </div>
+          </article>
+
+          <article class="service-card panel-card">
+            <div class="service-icon">🛁</div>
+            <div class="service-content">
+              <span class="service-tag">Higiene</span>
+              <h3>Banho e tosa</h3>
+              <p>Serviços de higiene e estética com profissionais especializados em cada raça e porte.</p>
+            </div>
+            <div class="service-meta">
+              <span>⭐ 4.7</span>
+              <button type="button">Ver mais</button>
+            </div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

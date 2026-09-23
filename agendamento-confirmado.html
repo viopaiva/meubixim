@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Agendamento confirmado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="success-page-body">
+    <div class="success-page-shell">
+      <header class="topbar">
+        <div class="brand-mini">
+          <img class="brand-logo" src="imagemmeubixim.jpeg" alt="Meu Bixim" />
+        </div>
+        <nav class="nav-links">
+          <a href="profile.html">Início</a>
+          <a href="discover.html">Serviços</a>
+          <a href="#">Mensagens</a>
+          <a href="#">Notificações</a>
+        </nav>
+        <div class="user-actions">
+          <button class="icon-button" type="button">🔔</button>
+          <button class="icon-button" type="button">✉️</button>
+
+          <div class="profile-menu-wrapper">
+            <button class="mini-user profile-trigger" type="button" aria-expanded="false">
+              <span class="mini-avatar">🐶</span>
+              <span>Billy</span>
+              <span class="caret">▾</span>
+            </button>
+
+            <div class="profile-dropdown">
+              <button type="button">🔄 Trocar de perfil</button>
+              <button type="button">⚙️ Configurações</button>
+              <button type="button" class="logout-option">↩️ Logout</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="success-page-main">
+        <section class="panel-card success-card">
+          <div class="success-icon">✅</div>
+          <span class="mini-tag success-tag">Agendamento confirmado</span>
+          <h1>Seu atendimento foi agendado com sucesso!</h1>
+          <p>O veterinário foi notificado e o pet já está na fila de atendimento com a especialidade escolhida.</p>
+
+          <div class="success-detail-grid">
+            <div class="success-detail">
+              <span>Pet</span>
+              <strong>Billy</strong>
+            </div>
+            <div class="success-detail">
+              <span>Especialidade</span>
+              <strong>Clínica Geral</strong>
+            </div>
+            <div class="success-detail">
+              <span>Data</span>
+              <strong>Hoje, 15:30</strong>
+            </div>
+            <div class="success-detail">
+              <span>Atendimento</span>
+              <strong>Em casa</strong>
+            </div>
+          </div>
+
+          <div class="success-actions">
+            <button class="primary-btn" type="button" onclick="window.location.href='profile.html'">Voltar para o início</button>
+            <button class="secondary-btn" type="button" onclick="window.location.href='discover.html'">Ver outros serviços</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

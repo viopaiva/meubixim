@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Agendar serviço</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="booking-page-body">
+    <div class="booking-page-shell">
+      <header class="topbar">
+        <div class="brand-mini">
+          <img class="brand-logo" src="imagemmeubixim.jpeg" alt="Meu Bixim" />
+        </div>
+        <nav class="nav-links">
+          <a href="profile.html">Início</a>
+          <a href="discover.html">Serviços</a>
+          <a href="#">Mensagens</a>
+          <a href="#">Notificações</a>
+        </nav>
+        <div class="user-actions">
+          <button class="icon-button" type="button">🔔</button>
+          <button class="icon-button" type="button">✉️</button>
+
+          <div class="profile-menu-wrapper">
+            <button class="mini-user profile-trigger" type="button" aria-expanded="false">
+              <span class="mini-avatar">🐶</span>
+              <span>Billy</span>
+              <span class="caret">▾</span>
+            </button>
+
+            <div class="profile-dropdown">
+              <button type="button">🔄 Trocar de perfil</button>
+              <button type="button">⚙️ Configurações</button>
+              <button type="button" class="logout-option">↩️ Logout</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="booking-page-main">
+        <section class="booking-hero panel-card">
+          <div>
+            <span class="mini-tag">Veterinário</span>
+            <h1>Contrate um serviço veterinário</h1>
+          </div>
+          <button class="secondary-btn" type="button" onclick="window.location.href='discover.html'">Voltar</button>
+        </section>
+
+        <section class="booking-layout">
+          <form class="panel-card booking-form" id="bookingForm">
+            <h3>Dados do pet</h3>
+
+            <label>
+              Nome do pet
+              <input type="text" placeholder="Ex.: Billy" />
+            </label>
+
+            <label>
+              Tipo de animal
+              <select>
+                <option>Cachorro</option>
+                <option>Gato</option>
+                <option>Pássaro</option>
+                <option>Outro</option>
+              </select>
+            </label>
+
+            <label>
+              Idade
+              <input type="text" placeholder="Ex.: 2 anos" />
+            </label>
+
+            <h3>Tipo de atendimento</h3>
+            <div class="service-options">
+              <label><input type="radio" name="serviceType" checked /> Consulta geral</label>
+              <label><input type="radio" name="serviceType" /> Vacinação</label>
+              <label><input type="radio" name="serviceType" /> Exames laboratoriais</label>
+              <label><input type="radio" name="serviceType" /> Emergência</label>
+              <label><input type="radio" name="serviceType" /> Castração</label>
+            </div>
+
+            <label>
+              Especialidade médica
+              <select>
+                <option>Clínica Geral</option>
+                <option>Cardiologia</option>
+                <option>Dermatologia</option>
+                <option>Neurologia</option>
+                <option>Odontologia</option>
+                <option>Cirurgia</option>
+                <option>Oncologia</option>
+              </select>
+            </label>
+
+            <label>
+              Preferência de atendimento
+              <select>
+                <option>Em casa</option>
+                <option>Clínica</option>
+                <option>Teleconsulta</option>
+              </select>
+            </label>
+
+            <label>
+              Observações
+              <textarea rows="4" placeholder="Descreva sintomas, histórico ou necessidade especial"></textarea>
+            </label>
+
+            <button type="submit" class="primary-btn">Confirmar agendamento</button>
+          </form>
+
+          <aside class="panel-card booking-summary">
+            <h3>Resumo do serviço</h3>
+            <div class="summary-item">
+              <span>Especialidade</span>
+              <strong>Clínica Geral</strong>
+            </div>
+            <div class="summary-item">
+              <span>Atendimento</span>
+              <strong>Consulta geral</strong>
+            </div>
+            <div class="summary-item">
+              <span>Tempo estimado</span>
+              <strong>40 minutos</strong>
+            </div>
+            <div class="summary-item">
+              <span>Preço</span>
+              <strong>R$ 180</strong>
+            </div>
+
+            <div class="availability-box">
+              <strong>Disponibilidade</strong>
+              <small>Hoje, 15:30 • Próximo horário disponível</small>
+            </div>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

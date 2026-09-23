@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Editar perfil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="edit-page-body">
+    <div class="edit-page-shell">
+      <div class="edit-card">
+        <div class="edit-header">
+          <div>
+            <h1>Editar perfil</h1>
+            <p class="edit-subtitle">Atualize as informações do seu pet</p>
+          </div>
+          <a href="profile.html" class="secondary-btn">Voltar</a>
+        </div>
+
+        <form class="edit-form" action="profile.html">
+          <div class="profile-image-picker">
+            <div class="profile-preview-avatar">🐕</div>
+            <div class="profile-picker-content">
+              <strong>Foto do perfil</strong>
+              <p>Atualize a imagem do seu pet</p>
+              <label class="upload-button" for="profileImageUpload">Trocar imagem</label>
+              <input id="profileImageUpload" type="file" accept="image/*" />
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field-group">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" value="Billy" />
+            </div>
+
+            <div class="field-group">
+              <label for="idade">Idade</label>
+              <input id="idade" name="idade" type="text" value="2 anos" />
+            </div>
+
+            <div class="field-group">
+              <label for="especie">Espécie</label>
+              <input id="especie" name="especie" type="text" value="Cachorro" />
+            </div>
+
+            <div class="field-group">
+              <label for="raca">Raça</label>
+              <input id="raca" name="raca" type="text" value="SRD" />
+            </div>
+
+            <div class="field-group">
+              <label for="peso">Peso</label>
+              <input id="peso" name="peso" type="text" value="18 kg" />
+            </div>
+
+            <div class="field-group">
+              <label for="cor">Cor</label>
+              <input id="cor" name="cor" type="text" value="Caramelo com branco" />
+            </div>
+
+            <div class="field-group reminder-group">
+              <label for="vermifugacao">Vermifugação</label>
+              <input id="vermifugacao" name="vermifugacao" type="text" value="Em dia" />
+              <div class="reminder-controls">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider"></span>
+                </label>
+                <span class="reminder-text">Ativar lembrete</span>
+                <label class="date-label" for="nextVermifugacao">Próxima data</label>
+                <input id="nextVermifugacao" name="nextVermifugacao" type="date" value="2026-10-15" />
+              </div>
+            </div>
+
+            <div class="field-group reminder-group">
+              <label for="vacinacao">Vacinação</label>
+              <input id="vacinacao" name="vacinacao" type="text" value="Atualizada" />
+              <div class="reminder-controls">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider"></span>
+                </label>
+                <span class="reminder-text">Ativar lembrete</span>
+                <label class="date-label" for="nextVacinacao">Próxima data</label>
+                <input id="nextVacinacao" name="nextVacinacao" type="date" value="2026-11-10" />
+              </div>
+            </div>
+
+            <div class="field-group reminder-group" style="grid-column: 1 / -1;">
+              <label for="consultas">Consultas</label>
+              <input id="consultas" name="consultas" type="text" value="Última consulta em 12/08" />
+              <div class="reminder-controls">
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider"></span>
+                </label>
+                <span class="reminder-text">Ativar lembrete</span>
+                <label class="date-label" for="nextConsulta">Próxima data</label>
+                <input id="nextConsulta" name="nextConsulta" type="date" value="2026-09-30" />
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <a href="profile.html" class="secondary-btn">Cancelar</a>
+            <button class="primary-btn" type="submit">Salvar</button>
+          </div>
+        </form>
+
+        <section class="history-section">
+          <div class="history-header">
+            <h2>Histórico</h2>
+            <span>Registros do cuidado do pet</span>
+          </div>
+
+          <div class="history-grid">
+            <article class="history-card">
+              <h3>Vacinas</h3>
+              <ul>
+                <li class="status-done"><span>✔</span> Vacina antirrábica — 12/03/2026</li>
+                <li class="status-done"><span>✔</span> V8/V10 — 28/06/2026</li>
+                <li class="status-pending"><span>⏳</span> Próxima dose prevista — 10/11/2026</li>
+              </ul>
+            </article>
+
+            <article class="history-card">
+              <h3>Vermifugação</h3>
+              <ul>
+                <li class="status-done"><span>✔</span> Vermífugo — 14/02/2026</li>
+                <li class="status-done"><span>✔</span> Vermífugo — 09/07/2026</li>
+                <li class="status-pending"><span>⏳</span> Próxima aplicação — 15/10/2026</li>
+              </ul>
+            </article>
+
+            <article class="history-card">
+              <h3>Consultas</h3>
+              <ul>
+                <li class="status-done"><span>✔</span> Exame anual — 12/08/2026</li>
+                <li class="status-done"><span>✔</span> Consulta de rotina — 03/05/2026</li>
+                <li class="status-pending"><span>⏳</span> Próxima consulta — 30/09/2026</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

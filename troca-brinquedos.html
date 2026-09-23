@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Bixim | Troca de brinquedos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="trade-page-body">
+    <div class="trade-page-shell">
+      <header class="topbar">
+        <div class="brand-mini">
+          <img class="brand-logo" src="imagemmeubixim.jpeg" alt="Meu Bixim" />
+        </div>
+        <nav class="nav-links">
+          <a href="profile.html">Início</a>
+          <a href="discover.html">Serviços</a>
+          <a class="active" href="troca-brinquedos.html">Troca de brinquedos</a>
+          <a href="#">Mensagens</a>
+          <a href="#">Notificações</a>
+        </nav>
+        <div class="user-actions">
+          <button class="icon-button" type="button">🔔</button>
+          <button class="icon-button" type="button">✉️</button>
+
+          <div class="profile-menu-wrapper">
+            <button class="mini-user profile-trigger" type="button" aria-expanded="false">
+              <span class="mini-avatar">🐶</span>
+              <span>Billy</span>
+              <span class="caret">▾</span>
+            </button>
+
+            <div class="profile-dropdown">
+              <button type="button">🔄 Trocar de perfil</button>
+              <button type="button">⚙️ Configurações</button>
+              <button type="button" class="logout-option">↩️ Logout</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="trade-page-main">
+        <section class="trade-hero panel-card">
+          <div>
+            <span class="mini-tag">Troca de brinquedos</span>
+            <h1>Doe, troque e descubra novos brinquedos para o seu pet</h1>
+          </div>
+          <button class="primary-btn" type="button" data-open-trade-page-form>+ Cadastrar item</button>
+        </section>
+
+        <section class="trade-layout">
+          <form id="tradeForm" class="panel-card trade-form-panel">
+            <h3>Cadastrar item para troca</h3>
+
+            <label>
+              Nome do item
+              <input type="text" name="itemName" placeholder="Ex.: bolinha de borracha" required />
+            </label>
+
+            <label>
+              Categoria
+              <select name="itemCategory">
+                <option value="Brinquedo">Brinquedo</option>
+                <option value="Acessório">Acessório</option>
+                <option value="Objeto">Objeto</option>
+                <option value="Petisco">Petisco</option>
+              </select>
+            </label>
+
+            <label>
+              Condição
+              <select name="itemCondition">
+                <option value="Excelente">Excelente</option>
+                <option value="Boa">Boa</option>
+                <option value="Usada">Usada</option>
+              </select>
+            </label>
+
+            <label>
+              Desejo em troca
+              <input type="text" name="itemSwap" placeholder="Ex.: outra bolinha ou petisco" required />
+            </label>
+
+            <label>
+              Descrição
+              <textarea name="itemDescription" rows="4" placeholder="Descreva o item e o motivo da troca" required></textarea>
+            </label>
+
+            <button type="submit" class="primary-btn">Salvar item</button>
+          </form>
+
+          <div class="panel-card trade-items-panel">
+            <div class="trade-items-header">
+              <h3>Itens disponíveis</h3>
+              <span class="trade-counter">4 itens</span>
+            </div>
+
+            <div id="tradeItemsList" class="trade-items-list">
+              <article class="trade-item-card">
+                <div class="trade-item-icon">🦴</div>
+                <div>
+                  <h4>Bolinha de borracha</h4>
+                  <p>Excelente • Brinquedo</p>
+                  <small>Troca por outro brinquedo ou petisco.</small>
+                </div>
+              </article>
+
+              <article class="trade-item-card">
+                <div class="trade-item-icon">🧸</div>
+                <div>
+                  <h4>Pelúcia de ursinho</h4>
+                  <p>Boa • Acessório</p>
+                  <small>Troca por coleira ou brinquedo interativo.</small>
+                </div>
+              </article>
+
+              <article class="trade-item-card">
+                <div class="trade-item-icon">🎾</div>
+                <div>
+                  <h4>Petisqueiro de plástico</h4>
+                  <p>Usada • Objeto</p>
+                  <small>Troca por objetos de banho ou petiscos.</small>
+                </div>
+              </article>
+
+              <article class="trade-item-card">
+                <div class="trade-item-icon">🥫</div>
+                <div>
+                  <h4>Kit de petiscos</h4>
+                  <p>Excelente • Petisco</p>
+                  <small>Troca por brinquedo ou acessório do pet.</small>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
